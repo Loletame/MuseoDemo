@@ -35,21 +35,27 @@
     <a-scene >
         <a-assets>
 
+            <!-- Modelos 3D -->
+             <a-asset-items id="silla" src="./assets/leather_chairgltf.glb"></a-asset-items>
+
             <template id="rig-template">
                 <a-entity></a-entity>
             </template>
 
             <!--textures-->
 
-            <img id="techo" src="./textures/personalizados/techo.jpg">
-            <img id="piso" src="./textures/personalizados/piso.jpg">
-            <img id="pisomarron" src="./textures/personalizados/pisomarron.jpg">
-            <img id="pisocrema" src="./textures/personalizados/pisocrema.jpg">
-            <img id="paredblanca" src="./textures/personalizados/paredblanca.jpg">
-            <img id="paredmarron" src="./textures/personalizados/paredmarron.jpg">
-            <img id="mesi" src="./textures/personalizados/mesi.jpg">
-            <img id="messicopa" src="./textures/personalizados/messicopa.jpg">
-            <img id="messitransparent" src="./textures/personalizados/messitransparent.png">
+            <img id="techo" src="./textures/personalizados/techo.jpg"alt="">
+            <img id="piso" src="./textures/personalizados/piso.jpg" alt="">
+            <img id="pisomarron" src="./textures/personalizados/pisomarron.jpg"alt>
+            <img id="pisocrema" src="./textures/personalizados/pisocrema.jpg"alt>
+            <img id="paredblanca" src="./textures/personalizados/paredblanca.jpg" alt="">
+            <img id="paredmarron" src="./textures/personalizados/paredmarron.jpg" alt="">
+            <img id="cuerpos" src="./img/5ab6d7b0ab634af1f21c10af35e5fb95.jpg" alt="">
+            <img id="pubertad" src="./img/c3f2b98a1959a12171e0e7e38052e761.jpg" alt="">
+            <img id="calendarioEsi" src="./img/Calendar_ESI.jpg" alt="">
+            <img id="cambios" src="./img/cambios-que-se-ven-y-se-sienten-collage_20231121140502.jpg" alt="">
+            <img id="esi" src="./img/ESI.jpg" alt="">
+            <img id="enseniar" src="./img/porque-enseñar.png" alt="">
             <!-- Templates -->
 
             <!-- Avatar -->
@@ -98,19 +104,21 @@
             floorTexture:pisocrema; 
             indoor:true">
         </a-entity>
-        <a-plane src="#mesi" height="2.5" width="3" rotation="0 90 0" position="0.505 1.54937 -19.16864" material="" geometry=""></a-plane>
-        <a-plane src="#mesi" height="2" width="2.5" rotation="" position="16.80645 1.5 -6.49" material="" geometry=""></a-plane>
-        <a-plane src="#mesi" height="1.5" width="1.5" rotation="0 -179.5930479259614 0" position="3.28794 1.64571 -7.51222" material="" geometry=""></a-plane>
-        <a-plane src="#mesi" height="1.5" width="1.5" rotation="0 90 0" position="0.505 0.8 -3.75 "></a-plane>
-        <a-plane src="#messicopa" height="3" width="3" rotation="0 90 0" position="0.505 1.5 0 "></a-plane>
+        <a-plane src="#esi" height="2.5" width="3" rotation="0 90 0" position="0.505 1.54937 -19.16864" material="" geometry=""></a-plane>
+        <a-plane src="#pubertad" height="2" width="2.5" rotation="" position="16.80645 1.5 -6.49" material="" geometry=""></a-plane>
+        <a-plane src="#calendario" height="1.5" width="1.5" rotation="0 -179.5930479259614 0" position="3.28794 1.64571 -7.51222" material="" geometry=""></a-plane>
+        <a-plane src="#cambios" height="1.5" width="1.5" rotation="0 90 0" position="0.505 0.8 -3.75 "></a-plane>
+        <a-plane src="#cuerpos" height="1" width="0.5" rotation="0 90 0" position="0.505 0.75 0 "></a-plane>
 
-        <a-plane src="#messicopa" height="3" width="3" rotation="0 0 0" position="3.160 1.5 -6.49"></a-plane>
+        <a-plane src="#enseniar" height="2" width="2" rotation="0 270 0" position="23.40243 1.5 2.20358" material="" geometry="" visible=""></a-plane>
         <a-plane src="#messicopa" height="2" width="2" rotation="0 0 0" position="5.75 1.5 -6.49"></a-plane>
         <a-plane src="#messicopa" height="1" width="1" rotation="0 0 0" position="7.31 1.5 -6.49"></a-plane>
         <a-plane src="#messicopa" height="0.5" width="0.5" rotation="0 0 0" position="8.1 1.5 -6.49"></a-plane>
         <a-plane src="#messitransparent" material="transparent: true" height="3" width="3" rotation="0 90 0"
             position="0.505 1.3 3 "></a-plane>
-        </a-entity>
+
+            <a-entity gltf-model="./assets/leather_chairgltf.glb" rotation="0 -90 0" position="20.09792 0.07967 -2.01395" scale="0.33514 0.33514 0.33514"></a-entity>
+
         <a-sky id="sky" color="#7AA1C1"></a-sky>
     </a-scene>
 </body>
