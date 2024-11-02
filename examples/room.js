@@ -1,6 +1,7 @@
 // Aframe room component by Chris Godber
 // Based on https://hacks.mozilla.org/2017/09/i-built-something-with-a-frame-in-2-days-and-you-can-too/
 // and https://24ways.org/2016/first-steps-in-vr/
+
 let mapSourceRaw = [];
 AFRAME.registerComponent('room', {
     schema: {
