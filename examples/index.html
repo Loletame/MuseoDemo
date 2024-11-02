@@ -78,15 +78,23 @@
             <!-- /Templates -->
 
         </a-assets>
-
-        <div id="chat-container">
-            <input type="text" id="chatInput" placeholder="">
-            <button id="chatButton"> Enviar </button>
-            <div id="messages"></div>
+        <h3 style="color: #615d5d; user-select: none;">USUARIO</h3>
+        <div 
+        id="chat-container" 
+        style="bottom: 24px; position: fixed; width: 300px;"
+        >
+            <div id="messages" style="margin-top: 0px; position: absolute; overflow-y: auto;"></div>
+            <div id="chat-bar" style="margin-top: 135px;">
+                <input type="text" id="chatInput" style="position: fixed;" placeholder="Escribe un mensaje">
+                <button id="chatButton"> Enviar </button>
+            </div>
+            
         </div>
-        <div style="z-index: 100; bottom: 24px; left: 48px; position: fixed">
-            <h3 style="color: #fff; user-select: none">Tu nombre:</h3>
-            <input id="user-name" />
+        <div id="user-n4me" style="z-index: 100; top: 0px;  left: 10px; position: absolute" >
+            <h5 style="user-select: none; display: flex; justify-content: center">
+                USUARIO
+            </h5>
+           <input id="user-name"/>
         </div>
         <a-entity light="type: ambient; color: #CCC;     intensity:1.2;"></a-entity>
         <a-entity chat-box></a-entity>
